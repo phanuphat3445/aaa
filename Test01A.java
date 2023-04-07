@@ -3,6 +3,7 @@ package test01;
 import java.awt.*;
 import java.awt.Dimension;
 
+import javax.swing.*;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -14,15 +15,15 @@ public class Test01A extends JPanel {
 	public Test01A() {
 		
 		setBounds(0, 0, 500, 300);
-		setPreferredSize(new Dimension(500, 300));
+		setPreferredSize(new Dimension(400, 300));
 		setLayout(null);
 		
 		JLabel label = new JLabel("A Simple Form");
-		label.setBounds(10, 10, label.getPreferredSize().width, 
+		label.setBounds(20, 20, label.getPreferredSize().width, 
 				label.getPreferredSize().height);
 
 		JLabel labelName = new JLabel("Name");
-		labelName.setBounds(10, 100, labelName.getPreferredSize().width, 
+		labelName.setBounds(20, 100, labelName.getPreferredSize().width, 
 				labelName.getPreferredSize().height);
 
 		JTextField textName = new JTextField(30);
@@ -30,7 +31,7 @@ public class Test01A extends JPanel {
 				textName.getPreferredSize().height);
 
 		JButton btnName = new JButton(" OK ");
-		btnName.setBounds(10, 200, btnName.getPreferredSize().width, 
+		btnName.setBounds(20, 200, btnName.getPreferredSize().width, 
 				btnName.getPreferredSize().height);
 
 		add(label);
@@ -43,7 +44,7 @@ public class Test01A extends JPanel {
 	public static void main(String[] args) {
 		
 		Test01A panel = new Test01A();
-		panel.setBackground(Color.CYAN);
+		panel.setBackground(Color.green);
 		panel.setOpaque(true);
 		
 		JFrame frame = new JFrame();
